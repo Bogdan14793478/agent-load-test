@@ -14,8 +14,7 @@ pipeline {
         )
         choice(
             name: 'ENVIRONMENT',
-            choices: ['dev', 'stage', 'prod'],
-            defaultValue: 'dev',
+            choices: ['dev', 'stage', 'prod'],  // ✅ Убрали defaultValue: 'dev',
             description: 'Оточення (dev, stage, prod)'
         )
     }
@@ -50,4 +49,3 @@ pipeline {
         }
     }
 }
-
